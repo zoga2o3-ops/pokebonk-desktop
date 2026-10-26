@@ -3,7 +3,7 @@
 An unofficial, fullscreen Windows client for the online game at <https://pokebonk.com/>.
 It is a small [Electron](https://www.electronjs.org/) wrapper: it opens the official website
 in its own window, so the game runs on the real game servers exactly as it does in a browser.
-It is meant to be added to Steam as a non-Steam game (for example on a Steam Deck via Proton).
+It can also be added to Steam as a non-Steam game.
 
 This project is not affiliated with the developer of Pokebonk, Nintendo, or The Pokémon Company.
 It contains no game code, artwork, music or saves. Pokémon and related names belong to their owners,
@@ -35,12 +35,11 @@ Grab `Pokebonk.exe` from the [Releases](../../releases) page. It is a single por
 no installer. It unpacks itself to a temporary folder on each launch, so the first seconds are slower
 than a folder build.
 
-### Steam / Steam Deck
+### Steam
 
 1. Put `Pokebonk.exe` somewhere permanent.
 2. In Steam choose **Add a Non-Steam Game**, browse to the file and add it.
-3. Under Properties → Compatibility, force a Proton version.
-4. Use the Gamepad controller layout.
+3. Use the Gamepad controller layout.
 
 ## Build from source
 
