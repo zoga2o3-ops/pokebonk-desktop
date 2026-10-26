@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-single/
+*.zip
+settings.json
+Pokebonk-win32-x64/

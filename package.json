@@ -1,0 +1,37 @@
+{
+  "name": "pokebonk-desktop",
+  "version": "1.0.0",
+  "description": "Fullscreen desktop client for pokebonk.com",
+  "main": "main.js",
+  "author": "zoga2o3-ops",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build:single": "electron-builder --win portable --x64",
+    "build": "electron-packager . Pokebonk --platform=win32 --arch=x64 --icon=icon.ico --ignore=^/dist --ignore=^/dist-single --ignore=\\.zip$ --out=dist --overwrite --prune=true"
+  },
+  "build": {
+    "appId": "local.pokebonk.desktop",
+    "productName": "Pokebonk",
+    "directories": {
+      "output": "dist-single"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "icon.png",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico",
+      "signAndEditExecutable": false,
+      "artifactName": "Pokebonk.exe"
+    }
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^45.0.0",
+    "electron-builder": "^25.1.8"
+  }
+}
